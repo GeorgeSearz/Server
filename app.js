@@ -4,7 +4,7 @@ const http = require("http");
 const socketIo = require("socket.io");
 const axios = require("axios");
 
-const port = 80;
+const port = 8080;
 const index = require("./routes/index");
 
 const app = express();
