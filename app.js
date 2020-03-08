@@ -37,7 +37,7 @@ io.on("DataFarmerDocked", socket => {
     console.log("Data Farmer reporting for duty")
     socket.emit("echo", "hello df")
 })
-server.listen(port, () => console.log(`Listening on port ${port}`));
+server.listen(port,'0.0.0.0', () => console.log(`Listening on port ${port}`));
 
 const getApiAndEmit = async socket => {
     try {
